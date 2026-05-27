@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 /* ─────────────────────── CONSTANTS ─────────────────────────────────────── */
 const Depts = ['produccion','tooling','tecnicos','qm','keyposition'];
@@ -151,6 +152,7 @@ export default function App() {
         {view==='detail'    && <DetailView    {...ctx}/>}
         {view==='admin'     && <AdminView     {...ctx}/>}
       </div>
+      <SpeedInsights />
     </div>
   );
 }
@@ -980,7 +982,7 @@ function UForm({ u, setU, onSave, onCancel, lbl }) {
   );
 }
 
-/* ─── CHECKLIST MANAGEMENT ────────────────────────────────────────────────── */
+/* ─── CHECKLIST MANAGEMENT ─────────────────────────────���──────────────────── */
 function CLMgmt({ cl, saveCl }) {
   const [dept,    setDept]    = useState('tooling');
   const [adding,  setAdding]  = useState(false);
