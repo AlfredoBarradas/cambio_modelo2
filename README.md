@@ -1,1 +1,3 @@
-# cambio_modelo2
+# vite-react
+
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/vite-react)
